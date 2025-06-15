@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "SMHeadersFont";
+    src: url('../fonts/foglihtenno06_076.eot');
+    src: url('../fonts/foglihtenno06_076.eot?#iefix') format("embedded-opentype"), url('../fonts/foglihtenno06_076.woff2') format("woff2"), url('../fonts/foglihtenno06_076.woff') format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "SMTextsFont";
+    src: url('../fonts/worksans.eot');
+    src: url('../fonts/worksans.eot?#iefix') format("embedded-opentype"), url('../fonts/worksans.woff2') format("woff2"), url('../fonts/worksans.woff') format("woff");
+    font-weight: 400;
+    font-style: normal
+}

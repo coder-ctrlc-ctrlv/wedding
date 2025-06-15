@@ -1,0 +1,218 @@
+.wedding-day__header {
+    display: none;
+    position: relative;
+    text-align: center;
+    font-family: "SMTextsFont", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 46px;
+    letter-spacing: .015em;
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+.wedding-day__header::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    background: url("../../images/main-mob-back.webp") no-repeat left bottom / cover;
+    z-index: -1;
+}
+
+.wedding-day__names {
+    text-align: center;
+    font-family: "SMHeadersFont", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 81px;
+    letter-spacing: .01em;
+    word-spacing: 20px;
+    margin-top: 80px;
+}
+
+.wedding-day__photos {
+    position: relative;
+    margin-top: 80px;
+    padding: 5% 0;
+    background: url("../../images/main-bg-center.webp") repeat-x center / contain;
+}
+
+.wedding-day__photos--extra {
+    display: none;
+    background-image: url("../../images/main-bg-center_cropped.webp");
+}
+
+.wedding-day__photos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    background: url('../../images/main-bg-left.webp') repeat-x right / contain;
+}
+
+.wedding-day__photos::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: -100%;
+    background: url('../../images/main-bg-right.webp') repeat-x left / contain;
+}
+
+.wedding-day__photos-inner {
+    display: flex;
+    gap: 17px;
+    overflow: hidden;
+    margin-left: -10%;
+    margin-right: -10%;
+}
+
+.wedding-day__photo {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.wedding-day__photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.wedding-day__date {
+    display: none;
+    margin: 64px auto 0;
+    font-family: "SMTextsFont", sans-serif;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: .015em;
+    word-spacing: 8px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+    .wedding-day__names {
+        font-size: 40px;
+        line-height: 50px;
+        word-spacing: 12px;
+        margin-top: 50px;
+    }
+
+    .wedding-day__photos {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wedding-day {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wedding-day__header {
+        order: 1;
+        display: block;
+    }
+
+    .wedding-day__photos {
+        order: 2;
+        margin-top: 0;
+        background-size: cover;
+        padding: 7% 0;
+    }
+
+    .wedding-day__photos--extra {
+        padding: 0 0 7%;
+        margin-top: -1px;
+    }
+
+    .wedding-day__photos--extra {
+        display: block;
+    }
+
+    .wedding-day__photos-inner {
+        margin-left: -25%;
+        margin-right: -100%;
+        gap: 34px;
+    }
+
+    .wedding-day__photos--extra .wedding-day__photos-inner {
+        margin-left: -10%;
+        margin-right: -115%;
+    }
+
+    .wedding-day__names {
+        order: 3;
+        font-size: 64px;
+        line-height: 80px;
+        word-spacing: 24px;
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wedding-day__date {
+        order: 4;
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .wedding-day__header {
+        font-size: 30px;
+        line-height: 34px;
+        padding-top: 45px;
+        padding-bottom: 65px;
+    }
+
+    .wedding-day__photos-inner {
+        gap: 25px;
+    }
+
+    .wedding-day__names {
+        font-size: 45px;
+        line-height: 60px;
+        word-spacing: 18px;
+        margin-top: 48px;
+    }
+
+    .wedding-day__date {
+        margin: 48px auto 0;
+        font-size: 36px;
+        line-height: 42px;
+        word-spacing: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wedding-day__header {
+        font-size: 20px;
+        line-height: 23px;
+        padding-top: 30px;
+        padding-bottom: 43px;
+    }
+
+    .wedding-day__photos-inner {
+        gap: 17px;
+    }
+
+    .wedding-day__names {
+        font-size: 32px;
+        line-height: 40px;
+        word-spacing: 12px;
+        margin-top: 32px;
+    }
+
+    .wedding-day__date {
+        margin: 32px auto 0;
+        font-size: 24px;
+        line-height: 28px;
+        word-spacing: 4px;
+    }
+}

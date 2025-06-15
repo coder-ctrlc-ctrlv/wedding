@@ -1,0 +1,57 @@
+.main {
+    font-family: "SMTextsFont", sans-serif;
+    color: #000;
+}
+
+.section {
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.section--dark {
+    background: black;
+}
+
+.section__inner-wrapper {
+    width: 65%;
+    max-width: 1212px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .section {
+        padding: 64px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 50px 0;
+    }
+
+    .section__inner-wrapper {
+        width: 100%;
+    }
+
+    .section__inner-wrapper--padding-none {
+        padding: 0;
+    }
+
+    .only-pc {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 33px 0;
+    }
+}
