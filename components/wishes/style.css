@@ -1,0 +1,203 @@
+.section--wishes {
+    margin: 100px 0;
+    position: relative;
+    overflow: visible;
+    background: url("../../images/wishes-photo.webp") no-repeat center 42% / cover;
+}
+
+.section--wishes::before {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 100%;
+    top: -100px;
+    bottom: 100%;
+    position: absolute;
+    background: url("../../images/wishes-lenta.webp") repeat-x center -4px;
+}
+
+.section--wishes::after {
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 100%;
+    top: 100%;
+    bottom: -100px;
+    position: absolute;
+    background: url("../../images/wishes-lenta.webp") repeat-x center calc(100% + 4px);
+}
+
+.wishes {
+    padding: 60px;
+    background: #ffffff;
+}
+
+.wishes__wrapper {
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.wishes__img-wrapper {
+    align-self: center;
+    width: calc(40% - 20px);
+}
+
+.wishes__img {
+    width: 100%;
+    height: auto;
+}
+
+.wishes__separator {
+    width: 50%;
+    height: 1px;
+    background: #000000;
+    align-self: center;
+}
+
+.wishes__text-wrapper {
+    width: calc(60% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 20px;
+}
+
+.wishes__text {
+    padding: 0 10% 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: .015em;
+}
+
+@media (max-width: 1200px) {
+    .section--wishes {
+        margin: 64px 0;
+    }
+
+    .section--wishes::before {
+        top: -64px;
+        background-size: 20%;
+    }
+
+    .section--wishes::after {
+        bottom: -64px;
+        background-size: 20%;
+    }
+
+    .wishes {
+        padding: 40px;
+    }
+
+    .wishes__wrapper {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .wishes__img-wrapper {
+        width: 100%;
+    }
+
+    .wishes__text-wrapper {
+        width: 100%;
+    }
+
+    .wishes__text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section--wishes .title {
+        width: 100%;
+    }
+
+    .section--wishes {
+        padding: 150px 16px;
+    }
+
+    .section--wishes::before {
+        top: -70px;
+        background-size: 30%;
+    }
+
+    .section--wishes::after {
+        bottom: -70px;
+        background-size: 30%;
+    }
+
+    .wishes__text-wrapper {
+        gap: 30px;
+    }
+
+    .wishes__text {
+        padding: 0;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section--wishes {
+        margin: 70px 0;
+        padding: 120px 16px;
+    }
+
+    .section--wishes::before {
+        top: -70px;
+        background-size: 37%;
+    }
+
+    .section--wishes::after {
+        bottom: -70px;
+        background-size: 37%;
+    }
+
+    .wishes {
+        padding: 40px;
+    }
+
+    .wishes__wrapper {
+        margin-top: 40px;
+        gap: 40px;
+    }
+
+    .wishes__text {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section--wishes {
+        margin: 50px 0;
+    }
+
+    .section--wishes::before {
+        top: -50px;
+        background-size: 40%;
+    }
+
+    .section--wishes::after {
+        bottom: -50px;
+        background-size: 40%;
+    }
+
+    .wishes {
+        padding: 30px;
+    }
+
+    .wishes__wrapper {
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .wishes__text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
